@@ -160,11 +160,11 @@ build_lib_example ("${name}" "${source_files}" "${header_files}" "${libraries_to
 
 
 if(${NS3_EMU})
-    set(name lena-simple-epc-emu)
-    set(source_files ${name}.cc)
-    set(header_files)
-    set(libraries_to_link ${liblte} ${fd-net-device})
-    build_lib_example ("${name}" "${source_files}" "${header_files}" "${libraries_to_link}" "${files_to_copy}")
+    #set(name lena-simple-epc-emu)
+    #set(source_files ${name}.cc)
+    #set(header_files)
+    #set(libraries_to_link ${liblte} ${fd-net-device})
+    #build_lib_example ("${name}" "${source_files}" "${header_files}" "${libraries_to_link}" "${files_to_copy}")
 
 
 endif()

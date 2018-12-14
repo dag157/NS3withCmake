@@ -91,7 +91,7 @@ set(libs_to_build
         internet              #
         internet-apps         #
         lr-wpan               #
-        #lte                   #
+        lte                   #
         mesh                  #
         mobility              #
         mpi                   #
