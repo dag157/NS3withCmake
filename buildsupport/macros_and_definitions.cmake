@@ -422,13 +422,13 @@ macro (build_lib libname source_files header_files libraries_to_link test_source
             #COMMAND ${modulegen_modular_command}
             TIMEOUT 60
             WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-            #OUTPUT_FILE ${CMAKE_CURRENT_SOURCE_DIR}/bindings/output/${module_src}
+            OUTPUT_FILE ${CMAKE_CURRENT_SOURCE_DIR}/bindings/output/${module_src}
             RESULT_VARIABLE res
             ERROR_QUIET
         )
-        message(STATUS "building python modules ${libname}")
+        #message(STATUS "building python modules ${libname}")
         if(NOT TARGET ${libname})
-
+            message(STATUS "building python modules ${libname}")
             #file(COPY bindings/${module_src} DESTINATION ./build/src/${libname}/bindings/)
             #file(COPY bindings/${module_hdr} DESTINATION ./build/src/${libname}/bindings/)
 
