@@ -188,11 +188,11 @@ macro(process_options)
     set(THREADS_FOUND TRUE)
 
     if(${NS3_PYTHON})
-        #set(Python_ADDITIONAL_VERSIONS 3.6)
-        #find_package(PythonLibs)
+        set(Python_ADDITIONAL_VERSIONS 3.6)
+        find_package(PythonLibs)
 
         #if python is not found, uncomment the two lines above  
-        #and comment out the libe below in order to find the proper 
+        #and comment out the line below in order to find the proper 
         #python libraries
 
         find_package(Python2 COMPONENTS Interpreter Development)
